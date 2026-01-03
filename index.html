@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Complète le bus</h1>
-    <div id="bus">
-        <!-- Création des 8 fenêtres -->
+
+    <div id="formBus">
         <div class="fenetre" data-num="1">
             <select class="genre">
                 <option value="">--Genre--</option>
@@ -77,8 +77,42 @@
     </div>
 
     <button id="afficherBus">Afficher le bus complet</button>
-    <div id="resultat"></div>
+
+    <div id="busFinal"></div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+.bus {
+    width: 900px;
+    height: 200px;
+    background-color: #FFD700; /* jaune bus */
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 15px #aaa;
+}
+
+.bus .fenetreBus {
+    width: 90px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fenetreBus .emoji {
+    font-size: 40px;
+}
+
+.fenetreBus .prenomBus {
+    margin-top: 5px;
+    font-weight: bold;
+}
